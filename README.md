@@ -31,3 +31,19 @@ Open `index.html`. A local illustration is supplied in `assets/mandazi.svg`, and
 ## Finish
 
 Validate your HTML, then use only the keyboard to follow each link.
+
+<!-- mastery-kit:start -->
+## How to know you nailed it
+
+[![Mastery checks](https://github.com/kodenvibekenya/html-recipe-article/actions/workflows/mastery.yml/badge.svg)](https://github.com/kodenvibekenya/html-recipe-article/actions/workflows/mastery.yml)
+
+Open [MASTERY.md](MASTERY.md), then run:
+
+```sh
+node --test test/mastery.test.mjs
+```
+
+The untouched challenge is expected to start red. Keep the failures visible while you work; make the implementation satisfy the checks instead of deleting, skipping, or weakening them.
+
+A project is complete only when the automated checks, real-use/manual checks, and all three explain-back prompts pass. The [free KODE Ń VIBE mastery guide](https://kodenvibe.tech/notes/mastery/) explains why a green check alone is not enough.
+<!-- mastery-kit:end -->
