@@ -33,17 +33,30 @@ Open `index.html`. A local illustration is supplied in `assets/mandazi.svg`, and
 Validate your HTML, then use only the keyboard to follow each link.
 
 <!-- mastery-kit:start -->
-## How to know you nailed it
+## Get your automatic project grade
 
-[![Mastery checks](https://github.com/kodenvibekenya/html-recipe-article/actions/workflows/mastery.yml/badge.svg)](https://github.com/kodenvibekenya/html-recipe-article/actions/workflows/mastery.yml)
+1. [Create your own copy](https://github.com/kodenvibekenya/html-recipe-article/generate) from this template.
+2. Read [MASTERY.md](MASTERY.md), then create an attempt branch:
 
-Open [MASTERY.md](MASTERY.md), then run:
+   ```sh
+   git switch -c attempt/my-project
+   ```
 
-```sh
-node --test test/mastery.test.mjs
-```
+3. Build the project and run the same check GitHub uses:
 
-The untouched challenge is expected to start red. Keep the failures visible while you work; make the implementation satisfy the checks instead of deleting, skipping, or weakening them.
+   ```sh
+   node --test test/mastery.test.mjs
+   ```
 
-A project is complete only when the automated checks, real-use/manual checks, and all three explain-back prompts pass. The [free KODE Ń VIBE mastery guide](https://kodenvibe.tech/notes/mastery/) explains why a green check alone is not enough.
+4. Commit and push the attempt branch:
+
+   ```sh
+   git add .
+   git commit -m "Complete project attempt"
+   git push -u origin attempt/my-project
+   ```
+
+GitHub Actions grades every pushed attempt automatically. **PASS — NAILED IT** means every required check passed. **REVISE — KEEP BUILDING** means the run shows what to fix before you push again. You do not need the KODE Ń VIBE owner to review or start anything; the template's `main` branch stays quiet on purpose.
+
+The [free grading guide](https://kodenvibe.tech/notes/mastery/) explains the result and its limits.
 <!-- mastery-kit:end -->
